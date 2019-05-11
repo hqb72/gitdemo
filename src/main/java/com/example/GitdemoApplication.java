@@ -18,6 +18,7 @@ public class GitdemoApplication {
     @GetMapping("test")
     public String test(String arg) {
         System.out.println("arg:" + arg);
+
         return StringUtils.isEmpty(arg) ? "啊?谁叫我!" : arg.replaceAll("[?吗呀哟嘛]", "!").replaceAll("[!]+","!");
     }
 
